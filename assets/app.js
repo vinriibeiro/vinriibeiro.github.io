@@ -90,7 +90,7 @@ const dashboards = [
 
 const systems = [
   {
-    id: "seven", title: "Seven Telecom", type: "Sistema de gestão comercial", status: "Em produção", statusClass: "live",
+    id: "seven", thumb: "assets/thumb-seven.webp", title: "Seven Telecom", type: "Sistema de gestão comercial", status: "Em produção", statusClass: "live",
     url: "https://seventelecom-8e196495f6d6.herokuapp.com/apresentacao/sistema/demo/?perfil=gestor#/dashboard",
     description: "Gestão de vendas, qualidade, equipes e inadimplência por safra para uma operação comercial real.",
     context: "A operação partia de planilhas, sem histórico confiável e sem perfis de acesso por função.",
@@ -101,7 +101,7 @@ const systems = [
     links: [{label:"Demo gestor",url:"https://seventelecom-8e196495f6d6.herokuapp.com/apresentacao/sistema/demo/?perfil=gestor#/dashboard"},{label:"Demo mobile",url:"https://seventelecom-8e196495f6d6.herokuapp.com/apresentacao/sistema/celular.html"}]
   },
   {
-    id: "norte-link", title: "Norte Link", type: "Demonstração de sistema", status: "Demo aberta", statusClass: "demo",
+    id: "norte-link", thumb: "assets/thumb-nortelink.webp", title: "Norte Link", type: "Demonstração de sistema", status: "Demo aberta", statusClass: "demo",
     url: "https://norte-demo.onrender.com",
     description: "Ambiente completo de um provedor fictício com vendas, equipes, metas, instalação e fechamento diário.",
     context: "Demonstração pública do sistema com base simulada e acesso por perfil.",
@@ -112,7 +112,7 @@ const systems = [
     links: [{label:"Abrir demo",url:"https://norte-demo.onrender.com"},{label:"Código",url:"https://github.com/vinriibeiro/norte_demo"}]
   },
   {
-    id: "pulso", title: "Pulso", type: "Painel diário para ISPs", status: "Em operação", statusClass: "live",
+    id: "pulso", thumb: "assets/thumb-pulso.webp", title: "Pulso", type: "Painel diário para ISPs", status: "Em operação", statusClass: "live",
     url: "https://wpulso-demo.netlify.app",
     description: "Receita, churn, alertas de rede e indicadores explicados em linguagem simples para a rotina do provedor.",
     context: "Painel pensado para leitura matinal por uma operação de internet.",
@@ -123,7 +123,7 @@ const systems = [
     links: [{label:"Abrir demo",url:"https://wpulso-demo.netlify.app"}]
   },
   {
-    id: "evolumental", title: "EvoluMental Control", type: "Plataforma de estudos", status: "No ar", statusClass: "live",
+    id: "evolumental", thumb: "assets/thumb-evolumental.webp", title: "EvoluMental Control", type: "Plataforma de estudos", status: "No ar", statusClass: "live",
     url: "https://evolumental-control.vercel.app",
     description: "Estudo líquido, planejamento, calendário, flashcards, mapas mentais, metas e relatórios.",
     context: "Plataforma com dados locais ou na nuvem e trilhas para mais de 18 carreiras.",
@@ -134,7 +134,7 @@ const systems = [
     links: [{label:"Ver projeto",url:"https://evolumental-control.vercel.app"},{label:"Código",url:"https://github.com/vinriibeiro/evolumental-control"}]
   },
   {
-    id: "querypeak", title: "QueryPeak", type: "Produto de educação em dados", status: "No ar", statusClass: "live",
+    id: "querypeak", thumb: "assets/thumb-querypeak.webp", title: "QueryPeak", type: "Produto de educação em dados", status: "No ar", statusClass: "live",
     url: "https://querypeak.com.br",
     description: "Prática de SQL, Power BI e Excel com lições, desafios, nivelamento e revisão espaçada.",
     context: "Plataforma de treino com mais de 300 lições e 400 desafios em quatro formatos.",
@@ -145,7 +145,7 @@ const systems = [
     links: [{label:"Ver produto",url:"https://querypeak.com.br"}]
   },
   {
-    id: "site-express", title: "Site Express OS", type: "CRM + fábrica de sites", status: "Em uso", statusClass: "personal",
+    id: "site-express", thumb: "assets/thumb-siteexpress.webp", title: "Site Express OS", type: "CRM + fábrica de sites", status: "Em uso", statusClass: "personal",
     url: "https://github.com/vinriibeiro/site-express",
     description: "CRM de leads, briefing, geração de sites em Astro, pagamentos com travas e exportação para clientes.",
     context: "Operação própria de sites para negócios locais, com funil, projetos, pagamentos e catálogo público.",
@@ -267,8 +267,9 @@ function renderProjectCards(data, targetId, isPrototype = false) {
   const root = document.getElementById(targetId);
   root.innerHTML = data.map(project => {
     const link = project.links[0];
+    const thumb = isPrototype ? "" : (project.thumb ? `<div class="project-thumb"><img src="${escapeHTML(project.thumb)}" alt="Tela do ${escapeHTML(project.title)}" width="640" height="280" loading="lazy"></div>` : `<div class="project-thumb sym" aria-hidden="true"><i>▶</i>DEMO</div>`);
     return `<article class="${isPrototype ? "prototype-card" : "project-card"}">
-      <div class="project-card-top"><span class="project-type">${escapeHTML(project.type)}</span>${isPrototype ? "" : `<span class="project-status ${escapeHTML(project.statusClass)}">${escapeHTML(project.status)}</span>`}</div>
+      ${thumb}<div class="project-card-top"><span class="project-type">${escapeHTML(project.type)}</span>${isPrototype ? "" : `<span class="project-status ${escapeHTML(project.statusClass)}">${escapeHTML(project.status)}</span>`}</div>
       <h3>${escapeHTML(project.title)}</h3>
       <p class="project-description">${escapeHTML(project.description)}</p>
       ${isPrototype ? "" : `<p class="project-stack">${escapeHTML(project.stack.slice(0,4).join(" · "))}</p>`}
