@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1A1E20"/><stop offset="1" stop-color="#303231"/></linearGradient><linearGradient id="halo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9BE93" stop-opacity=".10"/><stop offset="1" stop-color="#D9BE93" stop-opacity="0"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1100" cy="-10" r="500" fill="url(#halo)"/>
+  <path d="M0 550H1200 M0 480H1200 M0 410H1200 M0 340H1200 M0 270H1200 M0 200H1200" stroke="#4C5658" stroke-opacity=".22"/>
+  <rect x="54" y="56" width="52" height="52" rx="12" fill="#252A2C" stroke="#4C5658"/>
+  <text x="65" y="89" font-size="25" font-weight="600" font-family="DM Sans,Arial,sans-serif" fill="#F2F0EB" letter-spacing="-2">VR</text>
+  <circle cx="96" cy="90" r="3" fill="#D9BE93"/>
+  <text x="121" y="89" font-size="20" font-weight="600" font-family="DM Sans,Arial,sans-serif" fill="#F2F0EB">Vinícius Ribeiro</text>
+  <text x="55" y="186" font-size="18" font-family="monospace" letter-spacing="3" fill="#D9BE93">ANALISTA DE DADOS &amp; BI</text>
+  <text x="50" y="286" font-size="67" font-weight="600" font-family="DM Sans,Arial,sans-serif" letter-spacing="-3.8" fill="#F2F0EB">Do dado bruto</text>
+  <text x="50" y="368" font-size="67" font-weight="600" font-family="DM Sans,Arial,sans-serif" letter-spacing="-3.8" fill="#D9BE93">à decisão.</text>
+  <text x="55" y="435" font-size="23" font-family="DM Sans,Arial,sans-serif" fill="#B9BBB8">Power BI · SQL · Python · Ciência de Dados</text>
+  <rect x="54" y="496" width="680" height="1" fill="#4C5658"/>
+  <text x="55" y="538" font-size="17" font-family="monospace" fill="#B9BBB8">DASHBOARDS  /  MACHINE LEARNING  /  SISTEMAS</text>
+  <rect x="800" y="152" width="352" height="330" rx="16" fill="#252A2C" stroke="#4C5658" stroke-width="2"/>
+  <text x="833" y="196" font-size="15" font-family="monospace" letter-spacing="1.2" fill="#D9BE93">PROJETOS EM DESTAQUE</text>
+  <path d="M833 222H1119 M833 303H1119 M833 384H1119" stroke="#4C5658" stroke-width="1"/>
+  <text x="833" y="275" font-size="29" font-weight="600" font-family="DM Sans,Arial,sans-serif" fill="#F2F0EB">Dashboards</text>
+  <text x="833" y="356" font-size="29" font-weight="600" font-family="DM Sans,Arial,sans-serif" fill="#F2F0EB">Ciência de Dados</text>
+  <text x="833" y="438" font-size="29" font-weight="600" font-family="DM Sans,Arial,sans-serif" fill="#F2F0EB">Sistemas</text>
+  <rect x="54" y="588" width="1090" height="1" fill="#4C5658"/>
+</svg>
