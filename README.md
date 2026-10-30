@@ -30,7 +30,7 @@ portfolio-vinicius/
 3. Além do Placar — Ciência de Dados
 4. Faixa de evidências (6 dashboards, 6 sistemas, 4 bancos, 200+ colaboradores cadastrados)
 5. Software & Data Products (6 sistemas + vitrine com 10 modelos)
-6. Protótipos & Operações (Gamenet e demos da Seven)
+6. Protótipos & Operações (demos da Seven)
 7. Método de trabalho
 8. Sobre e competências
 9. Experiência, formação e certificações
@@ -84,7 +84,7 @@ Os sistemas são apresentados em cards compactos com status, stack, descrição 
 | QueryPeak | Prática de SQL, Power BI e Excel com lições e desafios | No ar |
 | Site Express OS | CRM e fábrica de sites com geração e travas de pagamento | Em uso |
 
-Protótipos: Gamenet OS (proposta), Seven — visão do gestor (demo pública) e Seven — aplicativo de vendedor (em desenvolvimento). A vitrine de 10 modelos aparece numa faixa compacta, com aviso explícito de que empresas e imagens são fictícias.
+Protótipos: Seven — visão do gestor (demo pública) e Seven — aplicativo de vendedor (em desenvolvimento). A vitrine de 10 modelos aparece numa faixa compacta, com aviso explícito de que empresas e imagens são fictícias.
 
 O Painel de Produtividade da central omnichannel aparece apenas no bloco de competências, porque não há link público.
 
