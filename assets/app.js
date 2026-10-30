@@ -159,17 +159,6 @@ const systems = [
 
 const prototypes = [
   {
-    id: "gamenet", title: "Gamenet OS", type: "Proposta e protótipo", status: "Protótipo / proposta", statusClass: "demo",
-    url: "https://github.com/vinriibeiro/gamenet-os",
-    description: "Central planejada para integrar cobrança, clientes, retenção, monitoramento, equipes e metas sem substituir os sistemas de origem.",
-    context: "Proposta para provedor com SGP, Chatmix, PABX e Zabbix, com integração acima dessas ferramentas.",
-    objective: "Validar rotinas, responsabilidades e auditoria antes da implantação.",
-    highlights: ["Protótipo navegável com 12 áreas e quatro perfis.", "Fluxos de cobrança, retenção e escalonamento em 48h/72h.", "Monitoramento de POPs, equipamentos, quedas e chamados.", "Arquitetura proposta com PostgreSQL, conectores e fila de sincronização."],
-    stack: ["Next.js (proposta)", "TypeScript (proposta)", "PostgreSQL (proposta)", "PWA"],
-    note: "Os números demonstrados são fictícios. O repositório inclui apresentação, landing e protótipo.",
-    links: [{label:"Ver repositório",url:"https://github.com/vinriibeiro/gamenet-os"}]
-  },
-  {
     id: "seven-gestor", title: "Seven · Visão do gestor", type: "Protótipo navegável", status: "Demo pública", statusClass: "demo",
     url: "https://seventelecom-8e196495f6d6.herokuapp.com/apresentacao/sistema/demo/?perfil=gestor#/dashboard",
     description: "Demonstração do painel com indicadores de vendas, qualidade, operação, geografia e acessos do sistema Seven.",
