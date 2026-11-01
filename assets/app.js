@@ -277,22 +277,14 @@ mobileQuery.addEventListener("change", () => selectDashboard(currentDashboard));
 renderDashboardTabs();
 selectDashboard(0);
 
-function renderProjectCards(data, targetId, isPrototype = false) {
+function renderOtherProjects(data, targetId) {
   const root = document.getElementById(targetId);
   root.innerHTML = data.map(project => {
     const link = project.links[0];
-    const thumb = isPrototype ? "" : (project.thumb ? `<div class="project-thumb"><img src="${escapeHTML(project.thumb)}" alt="Tela do ${escapeHTML(project.title)}" width="640" height="280" loading="lazy"></div>` : `<div class="project-thumb sym" aria-hidden="true"><i>▶</i>DEMO</div>`);
-    return `<article class="${isPrototype ? "prototype-card" : "project-card"}">
-      ${thumb}<div class="project-card-top"><span class="project-type">${escapeHTML(project.type)}</span>${isPrototype ? "" : `<span class="project-status ${escapeHTML(project.statusClass)}">${escapeHTML(project.status)}</span>`}</div>
-      <h3>${escapeHTML(project.title)}</h3>
-      <p class="project-description">${escapeHTML(project.description)}</p>
-      ${isPrototype ? "" : `<p class="project-stack">${escapeHTML(project.stack.slice(0,4).join(" · "))}</p>`}
-      <div class="project-footer"><a href="${escapeHTML(link.url)}" ${externalAttrs}>${escapeHTML(link.label)} ↗</a><button type="button" data-project-id="${escapeHTML(project.id)}" data-project-group="${isPrototype ? "prototypes" : "systems"}" aria-label="Detalhes do projeto ${escapeHTML(project.title)}">Detalhes →</button></div>
-    </article>`;
+    return `<li class="other-item"><span class="other-title">${escapeHTML(project.title)}</span><span class="other-type">${escapeHTML(project.type)}</span><span class="other-actions"><a href="${escapeHTML(link.url)}" ${externalAttrs}>${escapeHTML(link.label)} ↗</a><button type="button" data-project-id="${escapeHTML(project.id)}" data-project-group="systems" aria-label="Detalhes do projeto ${escapeHTML(project.title)}">Detalhes</button></span></li>`;
   }).join("");
 }
-renderProjectCards(systems, "system-grid");
-renderProjectCards(prototypes, "prototype-grid", true);
+renderOtherProjects(systems, "system-grid");
 
 const dialog = document.getElementById("project-dialog");
 const dialogContent = document.getElementById("dialog-content");

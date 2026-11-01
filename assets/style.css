@@ -287,3 +287,20 @@ ul{margin-top:0}
 /* texturas de seção */
 .dashboards-section{background:linear-gradient(180deg,rgba(255,255,255,.015),transparent 30%)}
 .proof-band{background:radial-gradient(70% 100% at 50% 100%,rgba(217,190,147,.08),transparent 70%),var(--surface)}
+
+/* Outros projetos: lista compacta, propositalmente discreta */
+.other-section{padding:64px 0;border-top:1px solid var(--line)}
+.other-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 40px;align-items:end;margin-bottom:22px}
+.other-head .section-index{grid-column:1/-1;margin:0}
+.other-head h2{font-size:24px;margin:0}
+.other-head p:not(.section-index){font-size:12px;color:var(--muted);margin:0}
+.other-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.other-item{display:grid;grid-template-columns:200px minmax(0,1fr) auto;gap:16px;align-items:center;padding:12px 2px;border-bottom:1px solid var(--line);font-size:13px}
+.other-title{color:var(--text);font-weight:600}
+.other-type{color:var(--dim);font:400 11px "IBM Plex Mono",monospace}
+.other-actions{display:flex;gap:14px;align-items:center;font-size:12px}
+.other-actions a{color:var(--accent);text-decoration:none}
+.other-actions a:hover{text-decoration:underline}
+.other-actions button{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;padding:0}
+.other-actions button:hover{color:var(--text)}
+@media(max-width:760px){.other-head{grid-template-columns:1fr}.other-item{grid-template-columns:1fr auto;gap:4px 12px}.other-type{grid-column:1;grid-row:2}.other-actions{grid-column:2;grid-row:1/3}}

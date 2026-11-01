@@ -25,18 +25,16 @@ portfolio-vinicius/
 
 ## Ordem das seções
 
-1. Cabeçalho e apresentação profissional com destaque para os projetos
-2. Dashboards & Data Projects (7 painéis interativos)
-3. Além do Placar — Ciência de Dados
-4. Faixa de evidências (7 dashboards, 6 sistemas, 4 bancos, 200+ colaboradores cadastrados)
-5. Software & Data Products (6 sistemas + vitrine com 10 modelos)
-6. Protótipos & Operações (demos da Seven)
-7. Método de trabalho
-8. Sobre e competências
-9. Experiência, formação e certificações
-10. Contato e rodapé
+Foco 100% em Análise de Dados e Ciência de Dados; desenvolvimento aparece pouco, no fim.
 
-O foco visual é a área de dashboards. Sistemas e protótipos vêm depois e os detalhes ficam em caixas modais.
+1. Cabeçalho e apresentação (indicadores de dados no painel do hero)
+2. Dashboards (7 painéis interativos)
+3. Além do Placar — Ciência de Dados
+4. Faixa de evidências (7 dashboards, 6,8 mi reclamações, ~410 mil marcações removidas, 4 bancos PostgreSQL)
+5. Método analítico (pergunta → fonte → coleta → limpeza → modelagem → validação → visualização → limitações)
+6. Sobre, competências (Analytics e Ciência de Dados), experiência e formação
+7. Também construo — lista compacta dos sistemas (sem miniaturas; detalhes em modal)
+8. Contato e rodapé
 
 ## Dashboard Showcase
 
