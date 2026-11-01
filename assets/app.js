@@ -45,6 +45,20 @@ const dashboards = [
     links: [{ label: "Explorar dashboard", url: "https://app.powerbi.com/view?r=eyJrIjoiMDUyZDhiOWUtMjA2MS00NzFiLTlhMTItZTQ1YTU1ZmEyODViIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" }]
   },
   {
+    id: "radar-de-livros",
+    title: "Radar de Livros",
+    short: "Radar de Livros",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiODEzYmMzMDItZDAyNS00MTk1LTg4ZjUtZmZhOGI4Yjk3ZTFiIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9",
+    description: "Quais livros mais aparecem nas estantes dos leitores: rankings anuais, evolução ano a ano e ficha completa de cada edição, de 2022 a 2026.",
+    context: "Marcações de “Lido” e “Quero ler” da comunidade Open Library (majoritariamente de língua inglesa), com dados até 30/09/2026. Não é ranking de vendas nem do mercado brasileiro.",
+    objective: "Separar sucessos passageiros de livros constantes e permitir explorar qualquer título por gênero, público, idioma e autor.",
+    highlights: ["Coleta via API pública e limpeza de ~410 mil marcações automáticas que distorciam 2026.", "Recorte comparável de janeiro a setembro para comparar anos incompletos.", "Posição ano a ano e recorrência no Top 30.", "Ficha do livro com sinopse, ISBN, editora e outras edições, priorizando a edição em português; capas validadas uma a uma."],
+    stack: ["Power BI", "DAX", "Power Query", "API REST", "Modelagem"],
+    source: "Open Library / Internet Archive · Dados abertos",
+    status: "Dados públicos",
+    links: [{ label: "Explorar dashboard", url: "https://app.powerbi.com/view?r=eyJrIjoiODEzYmMzMDItZDAyNS00MTk1LTg4ZjUtZmZhOGI4Yjk3ZTFiIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" }]
+  },
+  {
     id: "alvorada-net",
     title: "Alvorada Net",
     short: "Alvorada Net",
@@ -218,7 +232,7 @@ function renderDashboardTabs() {
 
 function renderCase(dashboard) {
   caseRoot.innerHTML = `
-    <p class="case-meta">ESTUDO ${String(currentDashboard + 1).padStart(2,"0")} · ${dashboard.pages} PÁGINAS · ${escapeHTML(dashboard.status)}</p>
+    <p class="case-meta">ESTUDO ${String(currentDashboard + 1).padStart(2,"0")} · ${dashboard.pages ? `${dashboard.pages} PÁGINAS · ` : ""}${escapeHTML(dashboard.status)}</p>
     <h3>${escapeHTML(dashboard.title)}</h3>
     <p class="case-description">${escapeHTML(dashboard.description)}</p>
     <div class="case-block"><span class="case-label">Contexto</span><p>${escapeHTML(dashboard.context)}</p></div>

@@ -26,9 +26,9 @@ portfolio-vinicius/
 ## Ordem das seções
 
 1. Cabeçalho e apresentação profissional com destaque para os projetos
-2. Dashboards & Data Projects (6 painéis interativos)
+2. Dashboards & Data Projects (7 painéis interativos)
 3. Além do Placar — Ciência de Dados
-4. Faixa de evidências (6 dashboards, 6 sistemas, 4 bancos, 200+ colaboradores cadastrados)
+4. Faixa de evidências (7 dashboards, 6 sistemas, 4 bancos, 200+ colaboradores cadastrados)
 5. Software & Data Products (6 sistemas + vitrine com 10 modelos)
 6. Protótipos & Operações (demos da Seven)
 7. Método de trabalho
@@ -40,7 +40,7 @@ O foco visual é a área de dashboards. Sistemas e protótipos vêm depois e os 
 
 ## Dashboard Showcase
 
-- Todas as seis abas são criadas a partir do array `dashboards` em `assets/app.js`.
+- Todas as sete abas são criadas a partir do array `dashboards` em `assets/app.js`.
 - Há exatamente **um** elemento `<iframe>` na página. Sua URL é trocada quando o usuário muda de dashboard no desktop.
 - Em telas pequenas, o iframe começa sem URL; o visitante pode abrir o Power BI em nova aba ou carregar o painel na própria página.
 - A aba selecionada atualiza título, estudo de caso, contexto, objetivo, análises, fonte e tecnologias.
@@ -52,6 +52,7 @@ O foco visual é a área de dashboards. Sistemas e protótipos vêm depois e os 
 | Amor em Dados | Casamentos e divórcios no Brasil, 2014–2024; 12 páginas | IBGE |
 | Candangão | Performance 2025/2026, clubes, jogos, torcida e auditoria; 13 páginas | FFDF |
 | Defensor do Consumidor | Reclamações, ranking, média bayesiana e qualidade de dados; 11 páginas | Consumidor.gov.br |
+| Radar de Livros | Livros mais marcados como “Lido” e “Quero ler”, 2022–2026; rankings, evolução e ficha de edições | Open Library / Internet Archive |
 | Alvorada Net | Visão de gestão de um provedor fictício; 5 páginas | Dados fictícios |
 | Nexo Fibra | Metas, vendas, funil e produtos de um provedor fictício; 3 páginas | Dados fictícios |
 | Além do Placar | Brasileirão, estatísticas, modelos e previsões; 7 páginas | OpenFootball e Wikimedia |
@@ -69,7 +70,7 @@ Além do Placar é apresentado com:
 
 O vídeo começa sem som quando entra na área visível e pausa fora dela. Em dispositivos com preferência por movimento reduzido, só toca quando o visitante usa o controle. Os links levam diretamente à [Central de Consulta](https://vinriibeiro.github.io/alem-do-placar/consulta.html), ao [dashboard](https://vinriibeiro.github.io/alem-do-placar/dashboard.html) e ao [repositório](https://github.com/vinriibeiro/alem-do-placar).
 
-O dashboard do projeto também está na sexta aba do Showcase.
+O dashboard do projeto também está na sétima aba do Showcase.
 
 ## Sistemas e protótipos
 
