@@ -28,9 +28,9 @@ portfolio-vinicius/
 Foco 100% em Análise de Dados e Ciência de Dados; desenvolvimento aparece pouco, no fim.
 
 1. Cabeçalho e apresentação (indicadores de dados no painel do hero)
-2. Dashboards (7 painéis interativos)
+2. Dashboards (8 painéis interativos)
 3. Além do Placar — Ciência de Dados
-4. Faixa de evidências (7 dashboards, 6,8 mi reclamações, ~410 mil marcações removidas, 4 bancos PostgreSQL)
+4. Faixa de evidências (8 dashboards, 6,8 mi reclamações, ~410 mil marcações removidas, 4 bancos PostgreSQL)
 5. Método analítico (pergunta → fonte → coleta → limpeza → modelagem → validação → visualização → limitações)
 6. Sobre, competências (Analytics e Ciência de Dados), experiência e formação
 7. Também construo — lista compacta dos sistemas (sem miniaturas; detalhes em modal)
@@ -38,7 +38,7 @@ Foco 100% em Análise de Dados e Ciência de Dados; desenvolvimento aparece pouc
 
 ## Dashboard Showcase
 
-- Todas as sete abas são criadas a partir do array `dashboards` em `assets/app.js`.
+- Todas as oito abas são criadas a partir do array `dashboards` em `assets/app.js`.
 - Há exatamente **um** elemento `<iframe>` na página. Sua URL é trocada quando o usuário muda de dashboard no desktop.
 - Em telas pequenas, o iframe começa sem URL; o visitante pode abrir o Power BI em nova aba ou carregar o painel na própria página.
 - A aba selecionada atualiza título, estudo de caso, contexto, objetivo, análises, fonte e tecnologias.
@@ -47,6 +47,7 @@ Foco 100% em Análise de Dados e Ciência de Dados; desenvolvimento aparece pouc
 
 | Dashboard | Texto de apresentação | Fonte |
 | --- | --- | --- |
+| Seven Telecom | Dashboard em uso na operação comercial (canal Claro); versão pública com dados fictícios | Operação real, dados fictícios |
 | Amor em Dados | Casamentos e divórcios no Brasil, 2014–2024; 12 páginas | IBGE |
 | Candangão | Performance 2025/2026, clubes, jogos, torcida e auditoria; 13 páginas | FFDF |
 | Defensor do Consumidor | Reclamações, ranking, média bayesiana e qualidade de dados; 11 páginas | Consumidor.gov.br |
@@ -68,7 +69,7 @@ Além do Placar é apresentado com:
 
 O vídeo começa sem som quando entra na área visível e pausa fora dela. Em dispositivos com preferência por movimento reduzido, só toca quando o visitante usa o controle. Os links levam diretamente à [Central de Consulta](https://vinriibeiro.github.io/alem-do-placar/consulta.html), ao [dashboard](https://vinriibeiro.github.io/alem-do-placar/dashboard.html) e ao [repositório](https://github.com/vinriibeiro/alem-do-placar).
 
-O dashboard do projeto também está na sétima aba do Showcase.
+O dashboard do projeto também está na oitava aba do Showcase.
 
 ## Sistemas e protótipos
 

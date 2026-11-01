@@ -3,6 +3,20 @@
 // Conteúdo centralizado: atualizar aqui, sem duplicar dados no HTML.
 const dashboards = [
   {
+    id: "seven-telecom",
+    title: "Seven Telecom",
+    short: "Seven Telecom",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiY2UwYTFlYjUtMDZiMy00NzVkLTkxMmEtYjQxM2RkYWZkZWRiIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9",
+    description: "Dashboard em uso na operação comercial da Seven Telecom, canal de vendas da Claro. Acompanha vendas, qualidade e desempenho das equipes.",
+    context: "Painel usado no dia a dia da operação. A versão pública troca os dados reais por dados fictícios, mantendo a mesma estrutura e as mesmas regras.",
+    objective: "Dar à gestão uma leitura única dos indicadores do canal, do resultado geral até equipes e vendedores.",
+    highlights: ["Indicadores do canal: conectividade, cancelamento, FPD por safra e ticket médio.", "FPD (inadimplência da primeira fatura) analisado por safra de venda.", "Recortes por equipe, vendedor e região.", "Versão pública anonimizada, com dados fictícios."],
+    stack: ["Power BI", "DAX", "Power Query", "Modelagem"],
+    source: "Operação real · Versão pública com dados fictícios",
+    status: "Em uso · dados fictícios",
+    links: [{ label: "Explorar dashboard", url: "https://app.powerbi.com/view?r=eyJrIjoiY2UwYTFlYjUtMDZiMy00NzVkLTkxMmEtYjQxM2RkYWZkZWRiIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" }]
+  },
+  {
     id: "amor-em-dados",
     title: "Amor em Dados",
     short: "Amor em Dados",

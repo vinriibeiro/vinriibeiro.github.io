@@ -70,7 +70,7 @@ ul{margin-top:0}
 .showcase-toolbar{display:flex;justify-content:space-between;align-items:center;padding:17px 22px;border-bottom:1px solid var(--line);color:var(--dim)}
 .toolbar-label{font-size:10px}
 .showcase-count{font:400 10px/1.5 "IBM Plex Mono",monospace;color:var(--accent)}
-.dashboard-tabs{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;border-bottom:1px solid var(--line);background:#262c2e}
+.dashboard-tabs{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:0;border-bottom:1px solid var(--line);background:#262c2e}
 .dashboard-tab{background:transparent;border:0;border-right:1px solid var(--line);padding:18px 12px 17px;color:var(--muted);text-align:left;cursor:pointer;position:relative;transition:background .18s,color .18s;min-width:0}
 .dashboard-tab:last-child{border-right:0}
 .dashboard-tab[aria-selected="true"]{background:#313639;color:var(--text)}
