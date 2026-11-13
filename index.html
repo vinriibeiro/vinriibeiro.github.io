@@ -133,6 +133,23 @@
           </div>
           <div class="science-metrics" aria-label="Resultados e qualidade do projeto"><div><strong>3.040</strong><span>partidas · 8 temporadas</span></div><div><strong>0,478 <small>vs 0,567</small></strong><span>MAE · Ridge versus baseline</span></div><div><strong>91,2%</strong><span>cobertura do intervalo de 90%</span></div><div><strong>367</strong><span>testes automatizados</span></div></div>
           <p class="science-footnote">Validação temporal, teste final em 2025 (n = 660). As previsões não são causais; não há dados de xG ou posse de bola nem teste de significância para alvos sobrepostos.</p>
+          <div class="science-grid science-project-2">
+            <div class="science-main">
+              <div class="science-tag"><span class="status-dot"></span> Projeto de portfólio · E-commerce Olist 2017–2018</div>
+              <h3 class="science-title-2">Atraso de Entregas<span class="text-accent">.</span></h3>
+              <p class="science-lead">Modelo que estima, na hora da compra, o risco de um pedido atrasar, com 91 mil pedidos reais da Olist. Validação temporal, backtest em oito datas, teste contra vazamento de dados e análise de custo da ação preventiva.</p>
+              <p class="science-small">A primeira versão parecia ótima na validação e <strong>desabou no teste</strong>: a taxa de atraso varia de 1% a 19% conforme o mês. O projeto documenta o diagnóstico e a correção. Resultado final modesto: <strong>ROC-AUC 0,70</strong>.</p>
+              <p class="science-principle">Desenvolvido com apoio do Claude Code (IA da Anthropic); escolhi o problema e revisei as decisões.</p>
+              <div class="science-actions"><a class="button button-primary" href="https://previsao-atraso-entregas.streamlit.app/" target="_blank" rel="noopener noreferrer">Testar o app ↗</a><a class="text-link" href="https://github.com/vinriibeiro/previsao-atraso-entregas" target="_blank" rel="noopener noreferrer">Código e metodologia ↗</a></div>
+            </div>
+            <figure class="science-video-panel science-figure">
+              <div class="video-panel-heading"><span class="mono">POR QUE O TESTE É DIFÍCIL</span><span class="video-duration"><span class="status-dot"></span> TAXA MENSAL</span></div>
+              <img src="assets/atraso-entregas-mes.png" alt="Gráfico da taxa mensal de pedidos atrasados entre 2017 e 2018, variando de cerca de 1% a 19%, com as divisões de treino, validação e teste" loading="lazy">
+              <figcaption class="video-panel-footer"><span>Taxa de atraso por mês da compra</span><span>PYTHON / SCIKIT-LEARN / STREAMLIT</span></figcaption>
+            </figure>
+          </div>
+          <div class="science-metrics" aria-label="Resultados do projeto Atraso de Entregas"><div><strong>91 mil</strong><span>pedidos · dados públicos</span></div><div><strong>0,70 <small>vs 0,43</small></strong><span>ROC-AUC · modelo versus regra simples</span></div><div><strong>8</strong><span>datas no backtest temporal</span></div><div><strong>24</strong><span>testes automatizados + CI</span></div></div>
+          <p class="science-footnote">Teste em pedidos de mar–jun/2018 (n = 18.603, 3,6% de atrasos). As premissas de custo são hipóteses; o modelo indica risco, não causa.</p>
         </div>
       </section>
 
