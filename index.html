@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#1A1E20">
-    <meta name="description" content="Portfólio de Vinícius Ribeiro: Análise de Dados, Ciência de Dados, dashboards em Power BI, SQL, PostgreSQL e Python com dados públicos e reais.">
+    <meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#11151b" media="(prefers-color-scheme: dark)">
+    <meta name="description" content="Portfólio de Vinícius Ribeiro: Ciência de Dados e Machine Learning com validação temporal, estatística, Python, SQL e dashboards em Power BI com dados públicos e reais.">
     <meta name="author" content="Vinícius Ribeiro">
     <meta name="robots" content="index, follow">
-    <title>Vinícius Ribeiro | Data Analytics, Power BI &amp; Data Science</title>
+    <title>Vinícius Ribeiro | Ciência de Dados, Machine Learning &amp; Analytics</title>
     <link rel="canonical" href="https://vinriibeiro.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="Vinícius Ribeiro | Do dado bruto à decisão">
-    <meta property="og:description" content="Dashboards públicos em Power BI, Ciência de Dados com validação temporal e dados tratados da coleta à decisão.">
+    <meta property="og:title" content="Vinícius Ribeiro | Do dado bruto à previsão testada">
+    <meta property="og:description" content="Modelos de Machine Learning comparados com uma referência simples, validados no tempo e publicados com código, testes e limitações.">
     <meta property="og:url" content="https://vinriibeiro.github.io/">
     <meta property="og:image" content="https://vinriibeiro.github.io/assets/og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vinícius Ribeiro | Data Analytics, BI & Ciência de Dados">
-    <meta name="twitter:description" content="Power BI, SQL, Python e Ciência de Dados — projetos, método e resultados documentados.">
+    <meta name="twitter:title" content="Vinícius Ribeiro | Ciência de Dados & Analytics">
+    <meta name="twitter:description" content="Python, Machine Learning, estatística, SQL e Power BI — projetos, método e resultados documentados.">
     <meta name="twitter:image" content="https://vinriibeiro.github.io/assets/og.jpg">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/app.js" defer></script>
   </head>
@@ -34,14 +35,15 @@
     <header class="site-header" id="topo">
       <div class="container header-inner">
         <a href="#topo" class="brand" aria-label="Vinícius Ribeiro — voltar ao início">
-          <span class="brand-mark" aria-hidden="true">VR<span class="brand-dot">.</span></span>
-          <span class="brand-name">Vinícius <span>Ribeiro</span></span>
+          <span class="brand-mark" aria-hidden="true">VR</span>
+          <span class="brand-name">Vinícius Ribeiro <span>· Ciência de Dados</span></span>
         </a>
         <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span></button>
         <nav class="nav" id="menu-principal" aria-label="Navegação principal">
-          <a href="#dashboards">Dashboards</a>
           <a href="#ciencia-de-dados">Ciência de Dados</a>
+          <a href="#dashboards">Dashboards</a>
           <a href="#metodo">Método</a>
+          <a href="#formacao">Formação</a>
           <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
           <a class="nav-linkedin" href="https://www.linkedin.com/in/vinriibeiro/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -52,51 +54,110 @@
     <main id="conteudo">
       <section class="hero container" aria-labelledby="titulo-principal">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> OLÁ, SOU VINÍCIUS RIBEIRO</p>
-          <h1 id="titulo-principal">Do dado bruto <span class="text-accent">à decisão.</span></h1>
-          <p class="hero-role">Analista de Dados &amp; Business Intelligence · Pós-graduado em Ciência de Dados</p>
-          <p class="hero-lead">Transformo dados brutos em respostas confiáveis. Coleto e trato dados com SQL, PostgreSQL e Python, modelo e valido com estatística e Machine Learning, e entrego a leitura em dashboards Power BI que documentam fonte e limitações.</p>
+          <p class="eyebrow">Vinícius Ribeiro · Ciência de Dados · Brasília, DF</p>
+          <h1 id="titulo-principal">Do dado bruto à <em>previsão testada.</em></h1>
+          <p class="hero-lead">Construo modelos preditivos e análises estatísticas com Python, SQL e Machine Learning. Cada modelo é comparado com uma referência simples, validado no tempo e publicado com código, testes e limitações.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#dashboards">Ver meus dashboards <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="#ciencia-de-dados">Projeto de Ciência de Dados <span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="#ciencia-de-dados">Ver projetos de Ciência de Dados <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#dashboards">Dashboards em Power BI</a>
           </div>
-          <p class="hero-availability"><span class="status-dot"></span> Brasília, DF <span aria-hidden="true">·</span> Analista de Dados na Central IT, em serviço para o MDS</p>
+          <p class="hero-role">Pós-graduado em Ciência de Dados · cursando pós em Estatística Aplicada para Data Science · Analista de Dados na Central IT, em serviço para o MDS</p>
           <ul class="tech-chips" aria-label="Tecnologias principais">
-            <li>Power BI</li><li>DAX</li><li>Power Query</li><li>SQL</li><li>PostgreSQL</li><li>Python</li><li>Machine Learning</li><li>DuckDB</li>
+            <li>Python</li><li>scikit-learn</li><li>Estatística</li><li>SQL</li><li>PostgreSQL</li><li>DuckDB</li><li>Power BI</li><li>DAX</li>
           </ul>
         </div>
-        <aside class="hero-panel" aria-label="Resumo do portfólio">
-          <div class="hero-panel-top"><span>VR · ANALYTICS</span><span><i class="status-dot"></i> ATUALIZADO 2026</span></div>
-          <div class="hero-kpis">
-            <div><strong>08</strong><span>dashboards públicos</span></div>
-            <div><strong>6,8 mi</strong><span>registros analisados (Consumidor.gov)</span></div>
-            <div><strong>3.040</strong><span>partidas modeladas com ML</span></div>
-            <div><strong>367</strong><span>testes no projeto de ML</span></div>
-          </div>
-          <div class="hero-chart" aria-hidden="true">
-            <div class="hero-chart-head"><span>MAE · Ridge vs baseline (holdout 2025)</span><span>menor é melhor</span></div>
-            <div class="hero-bars">
-              <div class="hero-bar"><span style="--w:84%"></span><em>Ridge</em><b>0,478</b></div>
-              <div class="hero-bar dim"><span style="--w:100%"></span><em>Média 5 jogos</em><b>0,567</b></div>
-              <div class="hero-bar dim"><span style="--w:91%"></span><em>Média histórica</em><b>0,515</b></div>
+        <figure class="hero-figure" aria-labelledby="fig1-caption">
+          <div class="figure-top"><span>FIG. 1 · MODELO × REFERÊNCIA</span><span class="figure-legend"><i class="dot-model"></i> modelo <i class="dot-base"></i> referência</span></div>
+          <div class="db-list">
+            <div class="db-row">
+              <div class="db-head"><strong>Além do Placar</strong><span>MAE · menor é melhor</span></div>
+              <div class="db-scale"><span>0,40</span>
+                <div class="db-track" style="--a:39%;--b:83.5%" role="img" aria-label="Erro médio absoluto: modelo Ridge 0,478; referência (média de 5 jogos) 0,567"><i class="db-link"></i><b class="db-dot base"><em>0,567</em></b><b class="db-dot model"><em>0,478</em></b></div>
+              <span>0,60</span></div>
+            </div>
+            <div class="db-row">
+              <div class="db-head"><strong>Atraso de Entregas</strong><span>ROC-AUC · maior é melhor</span></div>
+              <div class="db-scale"><span>0,30</span>
+                <div class="db-track" style="--a:80%;--b:26%" role="img" aria-label="ROC-AUC: modelo 0,70; regra simples 0,43"><i class="db-link"></i><b class="db-dot base"><em>0,43</em></b><b class="db-dot model"><em>0,70</em></b></div>
+              <span>0,80</span></div>
+            </div>
+            <div class="db-row">
+              <div class="db-head"><strong>Intervalo de previsão</strong><span>cobertura · alvo de 90%</span></div>
+              <div class="db-scale"><span>85%</span>
+                <div class="db-track" style="--a:62%;--b:50%" role="img" aria-label="Cobertura do intervalo de 90%: observada 91,2%; nominal 90%"><i class="db-link"></i><b class="db-dot base"><em>90%</em></b><b class="db-dot model"><em>91,2%</em></b></div>
+              <span>95%</span></div>
             </div>
           </div>
-          <div class="hero-panel-foot"><span>Power BI · SQL · PostgreSQL · Python</span><a href="#ciencia-de-dados">Ver o projeto →</a></div>
-        </aside>
+          <figcaption id="fig1-caption">Resultados em dados fora do treino: holdout 2025 (n = 660) e pedidos de mar–jun/2018 (n = 18.603). Cada linha tem a própria escala.</figcaption>
+        </figure>
+      </section>
+
+      <div class="proof-band" aria-label="Portfólio em números"><div class="container proof-grid"><div><strong>02</strong><span>modelos de ML publicados com código e testes</span></div><div><strong>08</strong><span>dashboards públicos em Power BI</span></div><div><strong>6,8 mi</strong><span>reclamações tratadas e auditadas</span></div><div><strong>02</strong><span>pós-graduações: uma concluída, uma em curso</span></div></div></div>
+
+      <section class="section science-section" id="ciencia-de-dados" aria-labelledby="science-title">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="section-index">01 / Ciência de Dados</p><h2 id="science-title">Modelos avaliados <em>fora da amostra.</em></h2></div>
+            <p>Dois projetos completos, da coleta ao deploy. Em ambos, o resultado é medido contra uma referência simples e as falhas ficam documentadas.</p>
+          </div>
+
+          <article class="project">
+            <div class="science-grid">
+              <div class="science-main">
+                <div class="science-tag">Projeto 01 · Brasileirão 2018–2025</div>
+                <h3 class="science-title">Além do Placar</h3>
+                <p class="science-lead">Construí este projeto para desenvolver minhas habilidades em Ciência de Dados. Analisei 3.040 partidas com dados abertos e reuni estatística, Machine Learning, Power BI e uma central de perguntas em português — cada resposta vem com a fonte.</p>
+                <p class="science-small">No teste de 2025, o erro do modelo foi de <strong>0,48 ponto por jogo</strong>, contra <strong>0,57</strong> da referência simples. Melhor, mas ainda é estimativa, não certeza. Uma hipótese minha também não se confirmou.</p>
+                <p class="science-principle">Duas regras: nada é inventado e toda resposta mostra de onde veio.</p>
+                <div class="science-actions"><a class="button button-primary" href="https://vinriibeiro.github.io/alem-do-placar/consulta.html" target="_blank" rel="noopener noreferrer">Testar a Central ↗</a><a class="button button-secondary" href="https://vinriibeiro.github.io/alem-do-placar/dashboard.html" target="_blank" rel="noopener noreferrer">Dashboard ↗</a><a class="text-link" href="https://github.com/vinriibeiro/alem-do-placar" target="_blank" rel="noopener noreferrer">Código e metodologia ↗</a></div>
+              </div>
+              <div class="science-video-panel">
+                <div class="video-panel-heading"><span class="mono">ASSISTA AO PROJETO</span><span class="video-duration">60 SEGUNDOS</span></div>
+                <video id="science-video" class="science-video" controls muted loop playsinline preload="none" poster="assets/alem-do-placar-poster.webp" aria-label="Vídeo de 60 segundos apresentando o projeto Além do Placar, com legendas na imagem">
+                  <source src="assets/alem-do-placar-60s.mp4" type="video/mp4">
+                  Seu navegador não suporta reprodução de vídeo.
+                </video>
+                <div class="video-panel-footer"><span>Demo legendada · reprodução sem áudio</span><span>PYTHON / ML / POWER BI</span></div>
+              </div>
+            </div>
+            <div class="science-metrics" aria-label="Resultados e qualidade do projeto Além do Placar"><div><strong>3.040</strong><span>partidas · 8 temporadas</span></div><div><strong>0,478 <small>vs 0,567</small></strong><span>MAE · Ridge versus baseline</span></div><div><strong>91,2%</strong><span>cobertura do intervalo de 90%</span></div><div><strong>367</strong><span>testes automatizados</span></div></div>
+            <p class="science-footnote">Validação temporal, teste final em 2025 (n = 660). As previsões não são causais; não há dados de xG ou posse de bola nem teste de significância para alvos sobrepostos.</p>
+          </article>
+
+          <article class="project">
+            <div class="science-grid">
+              <div class="science-main">
+                <div class="science-tag">Projeto 02 · E-commerce Olist 2017–2018</div>
+                <h3 class="science-title">Atraso de Entregas</h3>
+                <p class="science-lead">Modelo que estima, na hora da compra, o risco de um pedido atrasar, com 91 mil pedidos reais da Olist. Validação temporal, backtest em oito datas, teste contra vazamento de dados e análise de custo da ação preventiva.</p>
+                <p class="science-small">A primeira versão parecia ótima na validação e <strong>desabou no teste</strong>: a taxa de atraso varia de 1% a 19% conforme o mês. O projeto documenta o diagnóstico e a correção. Resultado final modesto: <strong>ROC-AUC 0,70</strong>.</p>
+                <p class="science-principle">Desenvolvido com apoio do Claude Code (IA da Anthropic); escolhi o problema e revisei as decisões.</p>
+                <div class="science-actions"><a class="button button-primary" href="https://previsao-atraso-entregas.streamlit.app/" target="_blank" rel="noopener noreferrer">Testar o app ↗</a><a class="text-link" href="https://github.com/vinriibeiro/previsao-atraso-entregas" target="_blank" rel="noopener noreferrer">Código e metodologia ↗</a></div>
+              </div>
+              <figure class="science-video-panel science-figure">
+                <div class="video-panel-heading"><span class="mono">POR QUE O TESTE É DIFÍCIL</span><span class="video-duration">TAXA MENSAL</span></div>
+                <img src="assets/atraso-entregas-mes.png" alt="Gráfico da taxa mensal de pedidos atrasados entre 2017 e 2018, variando de cerca de 1% a 19%, com as divisões de treino, validação e teste" loading="lazy">
+                <figcaption class="video-panel-footer"><span>Taxa de atraso por mês da compra</span><span>PYTHON / SCIKIT-LEARN / STREAMLIT</span></figcaption>
+              </figure>
+            </div>
+            <div class="science-metrics" aria-label="Resultados do projeto Atraso de Entregas"><div><strong>91 mil</strong><span>pedidos · dados públicos</span></div><div><strong>0,70 <small>vs 0,43</small></strong><span>ROC-AUC · modelo versus regra simples</span></div><div><strong>8</strong><span>datas no backtest temporal</span></div><div><strong>24</strong><span>testes automatizados + CI</span></div></div>
+            <p class="science-footnote">Teste em pedidos de mar–jun/2018 (n = 18.603, 3,6% de atrasos). As premissas de custo são hipóteses; o modelo indica risco, não causa.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section dashboards-section" id="dashboards" aria-labelledby="dashboards-title">
         <div class="container">
           <div class="section-heading">
-            <div><p class="section-index">01 / PORTFÓLIO ANALÍTICO</p><h2 id="dashboards-title">Dashboards que você pode <span class="text-accent">explorar.</span></h2></div>
-            <p>Seis painéis públicos em Power BI. Projetos com fontes identificadas, perguntas de negócio, modelagem e metodologia documentadas.</p>
+            <div><p class="section-index">02 / Análise e BI</p><h2 id="dashboards-title">Dashboards que você pode <em>explorar.</em></h2></div>
+            <p>Oito painéis públicos em Power BI, com fontes identificadas, perguntas de negócio, modelagem e metodologia documentadas.</p>
           </div>
           <div class="showcase">
             <div class="showcase-toolbar"><span class="mono toolbar-label">DASHBOARD SHOWCASE</span><span class="showcase-count" id="showcase-count">01 / 08</span></div>
             <div class="dashboard-tabs" id="dashboard-tabs" role="tablist" aria-label="Selecionar dashboard"></div>
             <div class="showcase-body">
               <div class="viewer-column">
-                <div class="viewer-head"><div><span class="viewer-live"><span class="status-dot"></span> POWER BI PÚBLICO</span><h3 id="viewer-title">Seven Telecom</h3></div><a class="viewer-external" id="viewer-external" href="#" target="_blank" rel="noopener noreferrer">Explorar dashboard <span aria-hidden="true">↗</span></a></div>
+                <div class="viewer-head"><div><span class="viewer-live">POWER BI PÚBLICO</span><h3 id="viewer-title">Seven Telecom</h3></div><a class="viewer-external" id="viewer-external" href="#" target="_blank" rel="noopener noreferrer">Explorar dashboard <span aria-hidden="true">↗</span></a></div>
                 <div class="viewer-shell" id="viewer-shell">
                   <div class="viewer-skeleton" id="viewer-skeleton" role="status" aria-label="Carregando dashboard"><span></span><span></span><span></span><p>Preparando visualização…</p></div>
                   <div class="viewer-mobile" id="viewer-mobile"><div class="mobile-visual" aria-hidden="true"><div class="mobile-visual-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mobile-visual-lines"><span></span><span></span><span></span></div></div><p>O dashboard completo é interativo. Para uma leitura melhor no celular, abra no Power BI ou carregue aqui.</p><div class="mobile-viewer-actions"><button class="button button-secondary button-small" type="button" id="load-mobile-iframe">Carregar nesta página</button><a class="button button-primary button-small" id="open-mobile-dashboard" href="#" target="_blank" rel="noopener noreferrer">Abrir dashboard ↗</a></div></div>
@@ -110,65 +171,51 @@
         </div>
       </section>
 
-      <section class="section science-section" id="ciencia-de-dados" aria-labelledby="science-title">
+      <section class="section method-section" id="metodo" aria-labelledby="method-title"><div class="container method-layout"><div><p class="section-index">03 / Método</p><h2 id="method-title">Como eu <em>analiso.</em></h2><p>Começo pela pergunta de negócio e só chego ao modelo ou ao gráfico depois de entender a fonte, tratar a base e validar os números. Cada entrega deixa claro o que o dado responde e o que ele não responde.</p></div><div class="method-panel"><ol class="method-flow" aria-label="Etapas da análise"><li>Pergunta</li><li>Fonte</li><li>Coleta</li><li>Limpeza</li><li>Modelagem</li><li>Validação</li><li>Visualização</li><li>Limitações</li></ol><ul class="method-rules"><li>Modelos avaliados com validação temporal contra uma referência simples.</li><li>Testes contra vazamento de dados e backtest em mais de uma data.</li><li>Controles de qualidade documentados antes da análise (ex.: DQ01–DQ07 no Defensor do Consumidor).</li><li>Comparações justas: taxas por população, recortes comparáveis e média bayesiana contra amostras pequenas.</li><li>Fonte e limitações visíveis em cada entrega; nenhum resultado inventado.</li></ul></div></div></section>
+
+      <section class="section education-section" id="formacao" aria-labelledby="education-title">
         <div class="container">
-          <div class="science-grid">
-            <div class="science-main">
-              <p class="section-index">02 / PROJETO DE CIÊNCIA DE DADOS</p>
-              <div class="science-tag"><span class="status-dot"></span> Projeto pessoal · Brasileirão 2018–2025</div>
-              <h2 id="science-title">Além do Placar<span class="text-accent">.</span></h2>
-              <p class="science-lead">Construí este projeto para desenvolver minhas habilidades em Ciência de Dados. Analisei 3.040 partidas com dados abertos e reuni estatística, Machine Learning, Power BI e uma central de perguntas em português — cada resposta vem com a fonte.</p>
-              <p class="science-small">No teste de 2025, o erro do modelo foi de <strong>0,48 ponto por jogo</strong>, contra <strong>0,57</strong> da referência simples. Melhor, mas ainda é estimativa, não certeza. Uma hipótese minha também não se confirmou.</p>
-              <p class="science-principle">Duas regras: nada é inventado e toda resposta mostra de onde veio.</p>
-              <div class="science-actions"><a class="button button-primary" href="https://vinriibeiro.github.io/alem-do-placar/consulta.html" target="_blank" rel="noopener noreferrer">Testar a Central ↗</a><a class="button button-secondary" href="https://vinriibeiro.github.io/alem-do-placar/dashboard.html" target="_blank" rel="noopener noreferrer">Dashboard ↗</a><a class="text-link" href="https://github.com/vinriibeiro/alem-do-placar" target="_blank" rel="noopener noreferrer">Código e metodologia ↗</a></div>
+          <div class="section-heading">
+            <div><p class="section-index">04 / Formação</p><h2 id="education-title">Duas pós-graduações <em>em dados.</em></h2></div>
+            <p>Ciência de Dados concluída em novembro de 2026. No mesmo mês, comecei a segunda, focada em estatística e desenho de experimentos.</p>
+          </div>
+          <div class="education-layout">
+            <div>
+              <h3 class="list-title">Pós-graduação e graduação</h3>
+              <div class="degree-list">
+                <article class="degree is-current"><span class="mono degree-status"><i class="status-dot"></i> Em andamento · início nov/2026</span><h4>Pós-graduação em Estatística Aplicada para Data Science</h4><p>Do básico ao experimental design · EAD</p></article>
+                <article class="degree"><span class="mono degree-status">Concluída · nov/2026</span><h4>Pós-graduação em Ciência de Dados</h4><p>Unicesumar</p></article>
+                <article class="degree"><span class="mono degree-status">Concluído · 2025</span><h4>Gestão de Segurança Privada</h4><p>Unicesumar</p></article>
+                <article class="degree"><span class="mono degree-status">Próximos passos</span><h4>Inglês diário e Microsoft PL-300</h4><p>Inglês em curso (Times Academy); PL-300 planejada.</p></article>
+              </div>
             </div>
-            <div class="science-video-panel">
-              <div class="video-panel-heading"><span class="mono">ASSISTA AO PROJETO</span><span class="video-duration"><span class="status-dot"></span> 60 SEGUNDOS</span></div>
-              <video id="science-video" class="science-video" controls muted loop playsinline preload="none" poster="assets/alem-do-placar-poster.webp" aria-label="Vídeo de 60 segundos apresentando o projeto Além do Placar, com legendas na imagem">
-                <source src="assets/alem-do-placar-60s.mp4" type="video/mp4">
-                Seu navegador não suporta reprodução de vídeo.
-              </video>
-              <div class="video-panel-footer"><span>Demo legendada · reprodução sem áudio</span><span>PYTHON / ML / POWER BI</span></div>
+            <div>
+              <h3 class="list-title">Certificações · Data Science Academy</h3>
+              <ul class="cert-list">
+                <li><div><h4>Fundamentos de Engenharia de Dados</h4><span class="mono">Credencial 6af774e6d8fce0bec60ee5c4</span></div><time>nov/2026</time></li>
+                <li><div><h4>Fundamentos de Data Science e Inteligência Artificial</h4><span class="mono">Credencial 6af766beb627411e2f02ad33</span></div><time>nov/2026</time></li>
+                <li><div><h4>Python Language Fundamentals: From Basics to AI Applications</h4><span class="mono">Credencial 691bd6233a89051b69065cba</span></div><time>out/2026</time></li>
+                <li><div><h4>Python Language Fundamentals for Data Analysis, Data Science, and Machine Learning</h4><span class="mono">Credencial 68f6fc1a9f4ceb0a650689b4</span></div><time>out/2026</time></li>
+                <li><div><h4>Microsoft Power BI for Business Intelligence and Data Science</h4><span class="mono">Credencial 6462fe1b2bb04988150abc99</span></div><time>set/2026</time></li>
+              </ul>
+              <p class="cert-other"><span class="mono">Outros cursos</span> FGV Online (2026) · Power BI do básico ao avançado (2022) · Excel básico e avançado, mLearn (2022) · LGPD, Enap (2024)</p>
             </div>
           </div>
-          <div class="science-metrics" aria-label="Resultados e qualidade do projeto"><div><strong>3.040</strong><span>partidas · 8 temporadas</span></div><div><strong>0,478 <small>vs 0,567</small></strong><span>MAE · Ridge versus baseline</span></div><div><strong>91,2%</strong><span>cobertura do intervalo de 90%</span></div><div><strong>367</strong><span>testes automatizados</span></div></div>
-          <p class="science-footnote">Validação temporal, teste final em 2025 (n = 660). As previsões não são causais; não há dados de xG ou posse de bola nem teste de significância para alvos sobrepostos.</p>
-          <div class="science-grid science-project-2">
-            <div class="science-main">
-              <div class="science-tag"><span class="status-dot"></span> Projeto de portfólio · E-commerce Olist 2017–2018</div>
-              <h3 class="science-title-2">Atraso de Entregas<span class="text-accent">.</span></h3>
-              <p class="science-lead">Modelo que estima, na hora da compra, o risco de um pedido atrasar, com 91 mil pedidos reais da Olist. Validação temporal, backtest em oito datas, teste contra vazamento de dados e análise de custo da ação preventiva.</p>
-              <p class="science-small">A primeira versão parecia ótima na validação e <strong>desabou no teste</strong>: a taxa de atraso varia de 1% a 19% conforme o mês. O projeto documenta o diagnóstico e a correção. Resultado final modesto: <strong>ROC-AUC 0,70</strong>.</p>
-              <p class="science-principle">Desenvolvido com apoio do Claude Code (IA da Anthropic); escolhi o problema e revisei as decisões.</p>
-              <div class="science-actions"><a class="button button-primary" href="https://previsao-atraso-entregas.streamlit.app/" target="_blank" rel="noopener noreferrer">Testar o app ↗</a><a class="text-link" href="https://github.com/vinriibeiro/previsao-atraso-entregas" target="_blank" rel="noopener noreferrer">Código e metodologia ↗</a></div>
-            </div>
-            <figure class="science-video-panel science-figure">
-              <div class="video-panel-heading"><span class="mono">POR QUE O TESTE É DIFÍCIL</span><span class="video-duration"><span class="status-dot"></span> TAXA MENSAL</span></div>
-              <img src="assets/atraso-entregas-mes.png" alt="Gráfico da taxa mensal de pedidos atrasados entre 2017 e 2018, variando de cerca de 1% a 19%, com as divisões de treino, validação e teste" loading="lazy">
-              <figcaption class="video-panel-footer"><span>Taxa de atraso por mês da compra</span><span>PYTHON / SCIKIT-LEARN / STREAMLIT</span></figcaption>
-            </figure>
-          </div>
-          <div class="science-metrics" aria-label="Resultados do projeto Atraso de Entregas"><div><strong>91 mil</strong><span>pedidos · dados públicos</span></div><div><strong>0,70 <small>vs 0,43</small></strong><span>ROC-AUC · modelo versus regra simples</span></div><div><strong>8</strong><span>datas no backtest temporal</span></div><div><strong>24</strong><span>testes automatizados + CI</span></div></div>
-          <p class="science-footnote">Teste em pedidos de mar–jun/2018 (n = 18.603, 3,6% de atrasos). As premissas de custo são hipóteses; o modelo indica risco, não causa.</p>
         </div>
       </section>
 
-      <div class="proof-band" aria-label="Projetos e experiência em números"><div class="container proof-grid"><div><strong>08</strong><span>dashboards públicos</span></div><div><strong>6,8 mi</strong><span>reclamações tratadas e auditadas</span></div><div><strong>~410 mil</strong><span>marcações automáticas removidas na limpeza</span></div><div><strong>04</strong><span>bancos PostgreSQL modelados</span></div></div></div>
-
-      <section class="section method-section" id="metodo" aria-labelledby="method-title"><div class="container method-layout"><div><p class="section-index">03 / MÉTODO ANALÍTICO</p><h2 id="method-title">Como eu <span class="text-accent">analiso.</span></h2><p>Começo pela pergunta de negócio e só chego ao gráfico depois de entender a fonte, tratar a base e validar os números. Cada painel deixa claro o que o dado responde e o que ele não responde.</p></div><div class="method-panel"><div class="method-flow" aria-label="Etapas da análise"><span>Pergunta</span><i>→</i><span>Fonte</span><i>→</i><span>Coleta</span><i>→</i><span>Limpeza</span><i>→</i><span>Modelagem</span><i>→</i><span>Validação</span><i>→</i><span>Visualização</span><i>→</i><span>Limitações</span></div><ul class="method-rules"><li>Controles de qualidade documentados antes da análise (ex.: DQ01–DQ07 no Defensor do Consumidor).</li><li>Comparações justas: taxas por população, recortes comparáveis e média bayesiana contra amostras pequenas.</li><li>Modelos avaliados com validação temporal contra uma referência simples.</li><li>Fonte e limitações visíveis em cada entrega; nenhum resultado inventado.</li></ul></div></div></section>
-
-      <section class="section about-section" id="sobre" aria-labelledby="about-title"><div class="container"><div class="about-layout"><div><p class="section-index">04 / SOBRE</p><h2 id="about-title">Entendo a operação <span class="text-accent">antes de modelar o dado.</span></h2><p>Trabalhei quase cinco anos em um provedor de internet, boa parte desse período na supervisão comercial. Indicadores, equipe, CRM e qualidade das vendas faziam parte das decisões do dia a dia.</p><p>Hoje atuo como Analista de Dados na Central IT, em serviço para o MDS. Trabalho com tratamento e modelagem em PostgreSQL e painéis Power BI para diferentes níveis de gestão.</p></div><div class="competence-grid"><div class="competence-card"><span class="mono">ANALYTICS</span><h3>Modelagem e leitura</h3><p>SQL, PostgreSQL, Power Query, DAX, Power BI, Python e modelagem dimensional. Painel operacional omnichannel com 13 tabelas fato, 120+ medidas e oito páginas.</p></div><div class="competence-card"><span class="mono">CIÊNCIA DE DADOS</span><h3>Modelar e validar</h3><p>Python, estatística e Machine Learning com validação temporal, intervalos de previsão e testes automatizados. Coleta de dados abertos via API, com auditoria da base antes da análise.</p></div></div></div>
-          <div class="career-layout"><div><h3>Experiência</h3><div class="career-list"><article><time>SET/2026 — ATUAL</time><div><h4>Analista de Dados</h4><p>Central IT · Ministério do Desenvolvimento Social</p><span>PostgreSQL, tratamento e modelagem de dados, Power BI e visões por níveis de gestão.</span></div></article><article><time>MAI/2021 — JAN/2026</time><div><h4>Supervisor Comercial / Técnico de Telecom</h4><p>Link Net Informática</p><span>Coordenação de equipe, indicadores, qualificação de leads, CRM e operação de provedor.</span></div></article><article><time>2015 — 2020</time><div><h4>Administrativo e atendimento</h4><p>Escritórios de advocacia · transporte coletivo</p><span>Rotinas administrativas, organização de processos e atendimento ao público.</span></div></article></div></div><div><h3>Formação e evolução</h3><div class="education-list"><article><span class="mono">EM ANDAMENTO · PREVISÃO DEZ/2026</span><h4>Pós-graduação em Ciência de Dados</h4><p>Unicesumar</p></article><article><span class="mono">CONCLUÍDO · 2025</span><h4>Gestão de Segurança Privada</h4><p>Unicesumar</p></article><article><span class="mono">CERTIFICAÇÕES</span><h4>Power BI para BI e Data Science · Python para Análise de Dados · SQL</h4><p>Data Science Academy (2026) · FGV Online (2026) · Power BI do básico ao avançado (2022) · Excel avançado (2021) · LGPD, Enap (2024)</p></article><article><span class="mono">PRÓXIMOS PASSOS</span><h4>Inglês diário e Microsoft PL-300</h4><p>Inglês em curso (Times Academy); PL-300 planejada.</p></article></div></div></div>
+      <section class="section about-section" id="sobre" aria-labelledby="about-title"><div class="container"><div class="about-layout"><div><p class="section-index">05 / Sobre</p><h2 id="about-title">Entendo a operação <em>antes de modelar o dado.</em></h2><p>Trabalhei quase cinco anos em um provedor de internet, boa parte desse período na supervisão comercial. Indicadores, equipe, CRM e qualidade das vendas faziam parte das decisões do dia a dia.</p><p>Hoje atuo como Analista de Dados na Central IT, em serviço para o MDS. Trabalho com tratamento e modelagem em PostgreSQL e painéis Power BI para diferentes níveis de gestão. Em paralelo, concluí a pós-graduação em Ciência de Dados e sigo estudando estatística aplicada.</p></div><div class="competence-grid"><div class="competence-card"><span class="mono">CIÊNCIA DE DADOS</span><h3>Modelar e validar</h3><p>Python, estatística e Machine Learning com validação temporal, intervalos de previsão e testes automatizados. Coleta de dados abertos via API, com auditoria da base antes da análise.</p></div><div class="competence-card"><span class="mono">ANALYTICS</span><h3>Modelagem e leitura</h3><p>SQL, PostgreSQL, Power Query, DAX, Power BI e modelagem dimensional. Quatro bancos PostgreSQL modelados e um painel operacional omnichannel com 13 tabelas fato, 120+ medidas e oito páginas.</p></div></div></div>
+          <div class="career-layout"><h3 class="list-title">Experiência</h3><div class="career-list"><article><time>SET/2026 — ATUAL</time><div><h4>Analista de Dados</h4><p>Central IT · Ministério do Desenvolvimento Social</p><span>PostgreSQL, tratamento e modelagem de dados, Power BI e visões por níveis de gestão.</span></div></article><article><time>MAI/2021 — JAN/2026</time><div><h4>Supervisor Comercial / Técnico de Telecom</h4><p>Link Net Informática</p><span>Coordenação de equipe, indicadores, qualificação de leads, CRM e operação de provedor.</span></div></article><article><time>2015 — 2020</time><div><h4>Administrativo e atendimento</h4><p>Escritórios de advocacia · transporte coletivo</p><span>Rotinas administrativas, organização de processos e atendimento ao público.</span></div></article></div></div>
         </div></section>
 
-      <section class="section other-section" id="outros-projetos" aria-labelledby="other-title"><div class="container"><div class="other-head"><p class="section-index">05 / TAMBÉM CONSTRUO</p><h2 id="other-title">Sistemas e produtos <span class="text-accent">fora do BI.</span></h2><p>Projetos de desenvolvimento em que modelo o banco de dados e os indicadores da operação.</p></div><ul class="other-list" id="system-grid"></ul></div></section>
+      <section class="section other-section" id="outros-projetos" aria-labelledby="other-title"><div class="container"><div class="other-head"><p class="section-index">06 / Também construo</p><h2 id="other-title">Sistemas e produtos <em>fora do BI.</em></h2><p>Projetos de desenvolvimento em que modelo o banco de dados e os indicadores da operação.</p></div><ul class="other-list" id="system-grid"></ul></div></section>
 
-      <section class="section contact-section" id="contato" aria-labelledby="contact-title"><div class="container contact-layout"><div><p class="section-index">06 / CONTATO</p><h2 id="contact-title">Vamos conversar sobre <span class="text-accent">dados?</span></h2><p>Projetos de BI, análise de dados e Ciência de Dados: da pergunta de negócio à decisão.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:vinriibeiro@gmail.com">Enviar e-mail ↗</a><a class="button button-secondary" href="https://www.linkedin.com/in/vinriibeiro/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="text-link" href="https://github.com/vinriibeiro" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="text-link" href="https://wa.me/5561999731141" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></section>
+      <section class="section contact-section" id="contato" aria-labelledby="contact-title"><div class="container contact-layout"><div><p class="section-index">07 / Contato</p><h2 id="contact-title">Vamos conversar sobre <em>dados?</em></h2><p>Ciência de Dados, Machine Learning e BI: da pergunta de negócio à decisão.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:vinriibeiro@gmail.com">Enviar e-mail ↗</a><a class="button button-secondary" href="https://www.linkedin.com/in/vinriibeiro/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="text-link" href="https://github.com/vinriibeiro" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="text-link" href="https://wa.me/5561999731141" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-inner"><span>© <span id="footer-year">2026</span> Vinícius Ribeiro</span><span>Do dado bruto à decisão.</span><a href="#topo">Voltar ao topo ↑</a></div></footer>
+    <footer class="site-footer"><div class="container footer-inner"><span>© <span id="footer-year">2026</span> Vinícius Ribeiro</span><span>Do dado bruto à previsão testada.</span><a href="#topo">Voltar ao topo ↑</a></div></footer>
 
     <dialog class="details-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><div class="dialog-top"><span class="mono" id="dialog-kicker">DETALHES DO PROJETO</span><button type="button" class="dialog-close" id="dialog-close" aria-label="Fechar detalhes">×</button></div><div id="dialog-content"></div></div></dialog>
-    <noscript><div class="noscript-notice">Ative o JavaScript para navegar pelas abas dos dashboards e pelos detalhes dos projetos. Os links de contato e do projeto Além do Placar continuam disponíveis.</div></noscript>
+    <noscript><div class="noscript-notice">Ative o JavaScript para navegar pelas abas dos dashboards e pelos detalhes dos projetos. Os links de contato e dos projetos de Ciência de Dados continuam disponíveis.</div></noscript>
   </body>
 </html>

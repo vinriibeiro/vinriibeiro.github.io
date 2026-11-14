@@ -2,39 +2,34 @@
 
 Site estático para `https://vinriibeiro.github.io/`, pronto para publicação no GitHub Pages.
 
-**Posicionamento:** Analista de Dados & BI · "Do dado bruto à decisão."
+**Posicionamento (v2):** Ciência de Dados · "Do dado bruto à previsão testada."
 
 ## Estrutura
 
 ```text
-portfolio-vinicius/
+├── index.html
 ├── README.md
-└── dist/
-    ├── index.html
-    └── assets/
-        ├── app.js
-        ├── style.css
-        ├── favicon.svg
-        ├── alem-do-placar-60s.mp4
-        ├── alem-do-placar-poster.webp
-        ├── og.jpg
-        └── og-source.svg
+└── assets/
+    ├── app.js        (dashboards, sistemas e interações)
+    ├── style.css     (tokens de cor no topo; tema claro e escuro automáticos)
+    ├── favicon.svg
+    ├── og.jpg
+    └── imagens e vídeo dos projetos
 ```
-
-**Para publicar, use o conteúdo de `dist/` na raiz do repositório**, não a pasta `dist` em si. Um arquivo ZIP pronto para isso acompanha a entrega.
 
 ## Ordem das seções
 
-Foco 100% em Análise de Dados e Ciência de Dados; desenvolvimento aparece pouco, no fim.
+Ciência de Dados vem primeiro; BI e desenvolvimento aparecem depois.
 
-1. Cabeçalho e apresentação (indicadores de dados no painel do hero)
-2. Dashboards (8 painéis interativos)
-3. Além do Placar — Ciência de Dados
-4. Faixa de evidências (8 dashboards, 6,8 mi reclamações, ~410 mil marcações removidas, 4 bancos PostgreSQL)
-5. Método analítico (pergunta → fonte → coleta → limpeza → modelagem → validação → visualização → limitações)
-6. Sobre, competências (Analytics e Ciência de Dados), experiência e formação
-7. Também construo — lista compacta dos sistemas (sem miniaturas; detalhes em modal)
-8. Contato e rodapé
+1. Abertura com a Fig. 1 (modelo × referência, com os resultados reais dos dois projetos)
+2. Faixa de números (2 modelos, 8 dashboards, 6,8 mi reclamações, 2 pós-graduações)
+3. Ciência de Dados — Além do Placar e Atraso de Entregas
+4. Dashboards (8 painéis interativos)
+5. Método
+6. Formação — pós-graduações e certificações da Data Science Academy com código de credencial
+7. Sobre, competências e experiência
+8. Também construo — lista compacta dos sistemas (detalhes em modal)
+9. Contato e rodapé
 
 ## Dashboard Showcase
 
