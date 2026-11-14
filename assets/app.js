@@ -129,15 +129,15 @@ const systems = [
     links: [{label:"Demo gestor",url:"https://seventelecom-8e196495f6d6.herokuapp.com/apresentacao/sistema/demo/?perfil=gestor#/dashboard"},{label:"Demo mobile",url:"https://seventelecom-8e196495f6d6.herokuapp.com/apresentacao/sistema/celular.html"}]
   },
   {
-    id: "norte-link", thumb: "assets/thumb-nortelink.webp", title: "Norte Link", type: "Demonstração de sistema", status: "Demo aberta", statusClass: "demo",
-    url: "https://norte-demo.onrender.com",
+    id: "norte-link", thumb: "assets/thumb-nortelink.webp", title: "Norte Link", type: "Demonstração de sistema", status: "Código aberto", statusClass: "demo",
+    url: "https://github.com/vinriibeiro/norte_demo",
     description: "Ambiente completo de um provedor fictício com vendas, equipes, metas, instalação e fechamento diário.",
     context: "Demonstração pública do sistema com base simulada e acesso por perfil.",
     objective: "Mostrar regras de operação e rotinas do software em um ambiente navegável.",
     highlights: ["Previsão de meta por ritmo realizado.", "Escala 6×1: sábado como meio dia; domingos e feriados excluídos.", "Confirmações D+1 e D+15, rota de instalação e fechamento diário.", "Importação de planilhas e exportação para Excel."],
     stack: ["PostgreSQL", "Node.js", "Express"],
-    note: "Dados fictícios. Hospedagem gratuita pode demorar para despertar. Acesso: master@demo.local / Demo@Master2026.",
-    links: [{label:"Abrir demo",url:"https://norte-demo.onrender.com"},{label:"Código",url:"https://github.com/vinriibeiro/norte_demo"}]
+    note: "Dados fictícios. A demonstração pública foi desativada; o código está no GitHub.",
+    links: [{label:"Código",url:"https://github.com/vinriibeiro/norte_demo"}]
   },
   {
     id: "pulso", thumb: "assets/thumb-pulso.webp", title: "Pulso", type: "Painel diário para ISPs", status: "Em operação", statusClass: "live",
@@ -162,15 +162,15 @@ const systems = [
     links: [{label:"Ver projeto",url:"https://evolumental-control.vercel.app"},{label:"Código",url:"https://github.com/vinriibeiro/evolumental-control"}]
   },
   {
-    id: "querypeak", thumb: "assets/thumb-querypeak.webp", title: "QueryPeak", type: "Produto de educação em dados", status: "No ar", statusClass: "live",
-    url: "https://querypeak.com.br",
+    id: "querypeak", thumb: "assets/thumb-querypeak.webp", title: "QueryPeak", type: "Produto de educação em dados", status: "Fora do ar", statusClass: "demo",
+    url: "",
     description: "Prática de SQL, Power BI e Excel com lições, desafios, nivelamento e revisão espaçada.",
     context: "Plataforma de treino com mais de 300 lições e 400 desafios em quatro formatos.",
     objective: "Permitir evolução por prática, com acesso controlado e pagamentos integrados.",
     highlights: ["Quiz, código validado, arrastar e soltar e completar código.", "XP, sequência, metas, nivelamento e revisão espaçada.", "Assinaturas e pagamentos via Mercado Pago.", "Autenticação segura, CSRF, rate limiting e auditoria no backend."],
     stack: ["Python", "JavaScript", "PostgreSQL", "Mercado Pago"],
-    note: "Produto publicado com termos, privacidade e política de reembolso.",
-    links: [{label:"Ver produto",url:"https://querypeak.com.br"}]
+    note: "O produto está fora do ar no momento.",
+    links: []
   },
   {
     id: "site-express", thumb: "assets/thumb-siteexpress.webp", title: "Site Express OS", type: "CRM + fábrica de sites", status: "Em uso", statusClass: "personal",
@@ -295,7 +295,8 @@ function renderOtherProjects(data, targetId) {
   const root = document.getElementById(targetId);
   root.innerHTML = data.map(project => {
     const link = project.links[0];
-    return `<li class="other-item"><span class="other-title">${escapeHTML(project.title)}</span><span class="other-type">${escapeHTML(project.type)}</span><span class="other-actions"><a href="${escapeHTML(link.url)}" ${externalAttrs}>${escapeHTML(link.label)} ↗</a><button type="button" data-project-id="${escapeHTML(project.id)}" data-project-group="systems" aria-label="Detalhes do projeto ${escapeHTML(project.title)}">Detalhes</button></span></li>`;
+    const linkHTML = link ? `<a href="${escapeHTML(link.url)}" ${externalAttrs}>${escapeHTML(link.label)} ↗</a>` : "";
+    return `<li class="other-item"><span class="other-title">${escapeHTML(project.title)}</span><span class="other-type">${escapeHTML(project.type)}</span><span class="other-actions">${linkHTML}<button type="button" data-project-id="${escapeHTML(project.id)}" data-project-group="systems" aria-label="Detalhes do projeto ${escapeHTML(project.title)}">Detalhes</button></span></li>`;
   }).join("");
 }
 renderOtherProjects(systems, "system-grid");
