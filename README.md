@@ -76,7 +76,6 @@ Os sistemas são apresentados em cards compactos com status, stack, descrição 
 | Norte Link | Operação fictícia com metas, escalas, instalação e fechamento | Demo aberta |
 | Pulso | Indicadores diários, churn, receita e alertas de rede | Em operação |
 | EvoluMental Control | Planejamento de estudo, tempo líquido e revisão espaçada | No ar |
-| QueryPeak | Prática de SQL, Power BI e Excel com lições e desafios | No ar |
 | Site Express OS | CRM e fábrica de sites com geração e travas de pagamento | Em uso |
 
 Protótipos: Seven — visão do gestor (demo pública) e Seven — aplicativo de vendedor (em desenvolvimento). A vitrine de 10 modelos aparece numa faixa compacta, com aviso explícito de que empresas e imagens são fictícias.

@@ -162,17 +162,6 @@ const systems = [
     links: [{label:"Ver projeto",url:"https://evolumental-control.vercel.app"},{label:"Código",url:"https://github.com/vinriibeiro/evolumental-control"}]
   },
   {
-    id: "querypeak", thumb: "assets/thumb-querypeak.webp", title: "QueryPeak", type: "Produto de educação em dados", status: "Fora do ar", statusClass: "demo",
-    url: "",
-    description: "Prática de SQL, Power BI e Excel com lições, desafios, nivelamento e revisão espaçada.",
-    context: "Plataforma de treino com mais de 300 lições e 400 desafios em quatro formatos.",
-    objective: "Permitir evolução por prática, com acesso controlado e pagamentos integrados.",
-    highlights: ["Quiz, código validado, arrastar e soltar e completar código.", "XP, sequência, metas, nivelamento e revisão espaçada.", "Assinaturas e pagamentos via Mercado Pago.", "Autenticação segura, CSRF, rate limiting e auditoria no backend."],
-    stack: ["Python", "JavaScript", "PostgreSQL", "Mercado Pago"],
-    note: "O produto está fora do ar no momento.",
-    links: []
-  },
-  {
     id: "site-express", thumb: "assets/thumb-siteexpress.webp", title: "Site Express OS", type: "CRM + fábrica de sites", status: "Em uso", statusClass: "personal",
     url: "https://github.com/vinriibeiro/site-express",
     description: "CRM de leads, briefing, geração de sites em Astro, pagamentos com travas e exportação para clientes.",
