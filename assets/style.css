@@ -219,8 +219,6 @@ ul,ol{margin-top:0}
 .cert-list h4{margin:0 0 4px}
 .cert-list .mono{color:var(--dim);font-size:10.5px;letter-spacing:.02em;text-transform:none;overflow-wrap:anywhere}
 .cert-list time{font:400 11.5px/1.5 var(--mono);color:var(--muted);white-space:nowrap}
-.cert-other{font-size:13.5px;line-height:1.6;margin:16px 0 0}
-.cert-other .mono{display:block;color:var(--dim);font-size:10.5px;margin-bottom:3px}
 
 /* Sobre e experiência */
 .about-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,80px);align-items:start}
